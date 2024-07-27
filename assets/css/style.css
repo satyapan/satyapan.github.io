@@ -5,3 +5,22 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed; /* Makes the background image stay fixed while scrolling */
 }
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
