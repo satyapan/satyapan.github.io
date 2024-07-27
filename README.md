@@ -1,7 +1,4 @@
-# Satyapan Munshi
-
-
-## Welcome to My Personal Website
+# Welcome to My Personal Website
 
 Hello! I'm Satyapan Munshi, a PhD student. Welcome to my personal website where I share my projects, blog posts, and more about my journey in astronomy.
 
