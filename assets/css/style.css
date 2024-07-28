@@ -6,7 +6,8 @@
 }
 
 html, body {
-    height: 100%; /* Ensure body and html are full height */
+    height: 100%;
+    margin: 0;
 }
 
 body {
@@ -15,10 +16,8 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
-    flex-direction: column; /* Arrange children in a column */
-    justify-content: space-between; /* Space out header and footer */
-    min-height: 100vh; /* Ensure full viewport height */
-    margin: 0;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header */
@@ -61,7 +60,7 @@ nav ul li a:hover {
 main {
     flex: 1; /* Allows main to grow and fill space */
     width: 100%; /* Ensure main spans full width */
-    padding-top: calc(3em); /* Adjusted padding for fixed header height */
+    padding-top: calc(3em + 1.5em); /* Adjusted padding for fixed header height */
     padding: 2em;
     text-align: center;
 }
