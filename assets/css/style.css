@@ -15,10 +15,14 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed; /* Fixes the background image in place */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-attachment: fixed; /* Fixed background for larger screens */
+    color: #000;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -60,14 +64,11 @@ nav ul li a:hover {
 /* Main Content */
 /* General styles for main content */
 main {
-    flex: 1; /* Allows main to grow and fill space */
-    width: 100%; /* Ensure main spans full width */
+    flex: 1;
+    width: 100%;
     padding: 2em;
-    margin-top: 5em; /* Ensures content starts below fixed header */
-    text-align: center; /* Center-align text */
-    color: #000; /* Text color */
-    font-family: Arial, sans-serif; /* Font family */
-    line-height: 1.6; /* Line height for better readability */
+    margin-top: 5em;
+    text-align: center;
 }
 
 /* Styling for all h1 elements */
@@ -86,12 +87,17 @@ main p {
 
 /* Media query for smaller screens (mobile devices) */
 @media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Allows the background to scroll with content */
+        background-size: auto; /* Adjust background size */
+    }
+
     main h1 {
-        font-size: 2.5em; /* Smaller font size for mobile devices */
+        font-size: 2.5em;
     }
 
     main p {
-        font-size: 1em; /* Smaller paragraph text size for mobile devices */
+        font-size: 1em;
     }
 }
 
