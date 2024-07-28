@@ -17,7 +17,7 @@ html, body {
     max-width: 200px; /* Restricts the image width */
     height: auto; /* Maintains aspect ratio */
     border-radius: 50%; /* Makes the image circular */
-    border: 2px solid #fff; /* Optional: white border around the image */
+    border: 2px solid #000; /* Optional: white border around the image */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Optional: adds shadow */
 }
 
