@@ -1,34 +1,45 @@
-/* General styles */
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Ensure body and html are full height */
+}
+
 body {
     background-image: url('../img/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    margin: 0;
-    min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Spread header, content, and footer */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: space-between; /* Space out header and footer */
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0;
 }
 
-header, main, footer {
-    width: 100%;
-}
-
+/* Header */
 header {
-    background: rgba(0, 0, 0, 0.7); /* Slightly transparent background for contrast */
+    width: 100vw; /* Ensure header spans full viewport width */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     padding: 1em;
-    position: sticky; /* Keeps the header at the top when scrolling */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
+    position: fixed; /* Keep header at top */
     top: 0;
-    z-index: 1000; /* Ensures the header stays above other elements */
+    left: 0;
+    z-index: 1000; /* Ensure header is on top */
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -45,15 +56,21 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Main Content */
 main {
-    flex: 1; /* Allows the main content to grow and fill space */
+    flex: 1; /* Allows main to grow and fill space */
+    width: 100%; /* Ensure main spans full width */
+    padding-top: 80px; /* Space for fixed header */
     padding: 2em;
     text-align: center;
 }
 
+/* Footer */
 footer {
+    width: 100vw; /* Ensure footer spans full viewport width */
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 1em;
     text-align: center;
+    position: relative; /* Stack normally in the flex layout */
 }
