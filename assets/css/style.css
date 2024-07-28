@@ -23,9 +23,9 @@ html, body {
 }
 
 .project-image {
-    width: 150px; /* Set a fixed width for images */
+    width: 400px; /* Set a fixed width for images */
     height: auto; /* Maintain aspect ratio */
-    border: 2px solid black; /* Optional: Add a border */
+    border: 10px solid black; /* Optional: Add a border */
 }
 
 /* Responsive design */
