@@ -6,12 +6,15 @@ body, h1, p {
 
 body {
     background-image: url('../img/background.png');
-    background-size: cover; /* Ensures the image covers the entire page */
+    background-size: cover; /* Cover the entire viewport */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center center; /* Centers the image */
-    margin: 0; /* Removes default margin */
-    height: 100vh; /* Ensures body takes full viewport height */
-    overflow: hidden; /* Prevents scrolling if content exceeds viewport */
+    margin: 0; /* Remove default margin */
+    min-height: 100vh; /* Ensure body is at least 100% of viewport height */
+    height: 100%; /* Use full height of the parent element */
+    display: flex; /* Flexbox helps with centering content */
+    flex-direction: column; /* Stacks content vertically */
+    justify-content: center; /* Centers content vertically */
 }
 
 
