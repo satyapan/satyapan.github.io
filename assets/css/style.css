@@ -25,7 +25,7 @@ body {
 header {
     width: 100vw; /* Ensure header spans full viewport width */
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    padding: 1em;
+    padding: 1.5em; /* Increased padding for more height */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
     position: fixed; /* Keep header at top */
     top: 0;
@@ -50,6 +50,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2em; /* Increased font size */
 }
 
 nav ul li a:hover {
@@ -60,7 +61,7 @@ nav ul li a:hover {
 main {
     flex: 1; /* Allows main to grow and fill space */
     width: 100%; /* Ensure main spans full width */
-    padding-top: 80px; /* Space for fixed header */
+    padding-top: calc(3em); /* Adjusted padding for fixed header height */
     padding: 2em;
     text-align: center;
 }
