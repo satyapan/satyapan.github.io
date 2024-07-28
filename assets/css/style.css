@@ -5,14 +5,15 @@ body, h1, p {
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-image: url('../img/background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: #333;
-    line-height: 1.6;
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the image */
+    margin: 0; /* Removes default margin */
+    height: 100vh; /* Ensures body takes full viewport height */
+    overflow: hidden; /* Prevents scrolling if content exceeds viewport */
 }
+
 
 header {
     background: rgba(0, 0, 0, 0.7);
