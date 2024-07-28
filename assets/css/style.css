@@ -10,6 +10,43 @@ html, body {
     margin: 0;
 }
 
+/* Style for the project section */
+.project {
+    display: flex; /* Flexbox layout */
+    align-items: flex-start; /* Aligns items at the start of the container */
+    margin-bottom: 20px; /* Space between project entries */
+}
+
+.project p {
+    flex: 1; /* Takes up remaining space */
+    margin-right: 20px; /* Space between text and image */
+}
+
+.project-image {
+    width: 150px; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid black; /* Optional: Add a border */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .project p {
+        margin-right: 0; /* Remove margin for vertical layout */
+        margin-bottom: 10px; /* Space between text and image */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .project-image {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 300px; /* Optional: limit max width */
+    }
+}
+
 /* Styling for the profile picture */
 .profile-picture {
     display: block;
