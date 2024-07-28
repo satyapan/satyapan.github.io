@@ -28,6 +28,8 @@ html, body {
     align-self: flex-start; /* Aligns the image to the top of the flex container */
     margin-left: 50px; /* Increase space between image and text */
     margin-right: 20px; /* Increase space between image and text */
+    margin-top: 10px; /* Increase space between image and text */
+    margin-bottom: 10px; /* Increase space between image and text */
 }
 
 /* Responsive design */
