@@ -10,6 +10,17 @@ html, body {
     margin: 0;
 }
 
+/* Styling for the profile picture */
+.profile-picture {
+    display: block;
+    margin: 1em auto; /* Centers the image horizontally */
+    max-width: 200px; /* Restricts the image width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    border: 2px solid #fff; /* Optional: white border around the image */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Optional: adds shadow */
+}
+
 body {
     background-image: url('../img/background.png');
     background-size: cover;
