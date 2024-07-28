@@ -79,8 +79,8 @@ main h1 {
 /* Styling for all paragraph elements */
 main p {
     font-size: 1.5em; /* Size for paragraph text */
-    margin: 1.5em 0; /* Margins above and below paragraphs */
-    line-height: 1.4; /* Adjusted line spacing within paragraphs */
+    margin: 2.5em 0; /* Margins above and below paragraphs */
+    line-height: 1; /* Adjusted line spacing within paragraphs */
     color: #000; /* Slightly different shade for paragraphs */
 }
 
