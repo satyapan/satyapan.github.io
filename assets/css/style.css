@@ -93,7 +93,7 @@ main p {
     font-size: 1.5em; /* Size for paragraph text */
     text-align: left; /* Aligns paragraph text to the left */
     margin: 2.5em 0; /* Margins above and below paragraphs */
-    line-height: 1; /* Adjusted line spacing within paragraphs */
+    line-height: 1.4; /* Adjusted line spacing within paragraphs */
     color: #000; /* Slightly different shade for paragraphs */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
 }
