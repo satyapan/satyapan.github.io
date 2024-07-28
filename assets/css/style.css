@@ -64,6 +64,7 @@ html, body {
 
 body {
     background-image: url('../img/background.jpeg');
+    background-attachment: fixed; /* Fixes the background image in place */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
