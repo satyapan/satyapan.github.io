@@ -11,22 +11,22 @@ html, body {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     background-image: url('../img/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header */
 header {
     width: 100vw; /* Ensure header spans full viewport width */
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    padding: 1.5em;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow */
-    position: fixed; /* Fixed position at the top */
+    padding: 1.5em; /* Increased padding for more height */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
+    position: fixed; /* Keep header at top */
     top: 0;
     left: 0;
     z-index: 1000; /* Ensure header is on top */
@@ -49,7 +49,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.2em; /* Increased font size */
 }
 
 nav ul li a:hover {
@@ -57,45 +57,53 @@ nav ul li a:hover {
 }
 
 /* Main Content */
+/* General styles for main content */
 main {
-    flex: 1; /* Allows main to grow and fill available space */
-    width: 100%;
+    flex: 1; /* Allows main to grow and fill space */
+    width: 100%; /* Ensure main spans full width */
     padding: 2em;
-    margin-top: 5em; /* Space for fixed header */
-    text-align: center;
-    color: #000;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    margin-top: 5em; /* Ensures content starts below fixed header */
+    text-align: center; /* Center-align text */
+    color: #000; /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
+    line-height: 1.6; /* Line height for better readability */
 }
 
+/* Styling for all h1 elements */
 main h1 {
-    font-size: 4em;
-    margin-bottom: 0.5em;
+    font-size: 4em; /* Larger font size for the main heading */
+    margin-bottom: 0.5em; /* Space below the heading */
+    color: #000; /* Specific text color */
 }
 
+/* Styling for all paragraph elements */
 main p {
-    font-size: 1.5em;
-    margin: 0.5em 0;
+    font-size: 1.5em; /* Size for paragraph text */
+    margin: 1.5em 0; /* Margins above and below paragraphs */
+    line-height: 1.4; /* Adjusted line spacing within paragraphs */
+    color: #000; /* Slightly different shade for paragraphs */
 }
 
-@media only screen and (max-width: 767px) {
+/* Media query for smaller screens (mobile devices) */
+@media (max-width: 768px) {
     main h1 {
         font-size: 2.5em; /* Smaller font size for mobile devices */
     }
 
     main p {
-        font-size: 1em;
+        font-size: 1em; /* Smaller paragraph text size for mobile devices */
+    }
+    body {
+        background-attachment: fixed;
     }
 }
 
 /* Footer */
 footer {
-    width: 100%; /* Ensure footer spans full width */
+    width: 100vw; /* Ensure footer spans full viewport width */
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 1em;
     text-align: center;
-    position: relative;
-    bottom: 0;
-    left: 0;
+    position: relative; /* Stack normally in the flex layout */
 }
