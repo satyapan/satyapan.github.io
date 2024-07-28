@@ -20,6 +20,7 @@ body {
 
 header {
     background: rgba(0, 0, 0, 0.7);
+    flex: 0 1 auto;
     padding: 1em;
 }
 
@@ -47,11 +48,13 @@ nav ul li a:hover {
 
 main {
     padding: 2em;
+    flex: 0 1 auto;
     text-align: center;
 }
 
 footer {
     background: rgba(0, 0, 0, 0.7);
+    flex: 0 1 auto;
     color: #fff;
     padding: 1em;
     text-align: center;
