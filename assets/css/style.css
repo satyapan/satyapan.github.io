@@ -73,14 +73,14 @@ main {
 main h1 {
     font-size: 4em; /* Larger font size for the main heading */
     margin-bottom: 0.5em; /* Space below the heading */
-    color: #ffffff; /* Specific text color */
+    color: #000; /* Specific text color */
 }
 
 /* Styling for all paragraph elements */
 main p {
     font-size: 2em; /* Size for paragraph text */
     margin: 0.5em 0; /* Margins above and below paragraphs */
-    color: #dddddd; /* Slightly different shade for paragraphs */
+    color: #000; /* Slightly different shade for paragraphs */
 }
 
 /* Footer */
