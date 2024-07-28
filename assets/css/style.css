@@ -80,6 +80,10 @@ main {
     line-height: 1.6; /* Line height for better readability */
 }
 
+main a {
+    color: #000; /* Sets the link color to black */
+}
+
 /* Styling for all h1 elements */
 main h1 {
     font-size: 4em; /* Larger font size for the main heading */
