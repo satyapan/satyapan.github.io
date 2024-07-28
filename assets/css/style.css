@@ -1,112 +1,59 @@
-/* General reset */
+/* Reset default margins and paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Full height layout for the body */
 html, body {
     height: 100%;
+    width: 100%;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
+/* Body styles */
 body {
+    display: flex;
+    flex-direction: column; /* Arranges header, main, footer in a column */
     background-image: url('../img/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed; /* Fixed background for larger screens */
+    background-attachment: fixed; /* Fixed background for desktop */
     color: #000;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
 }
 
-/* Header */
-header {
-    width: 100vw; /* Ensure header spans full viewport width */
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    padding: 1.5em; /* Increased padding for more height */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
-    position: fixed; /* Keep header at top */
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Ensure header is on top */
-}
-
-/* Navigation */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0 1em;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em; /* Increased font size */
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Main Content */
-/* General styles for main content */
+/* Ensure main content can grow to fill space */
 main {
     flex: 1;
-    width: 100%;
     padding: 2em;
-    margin-top: 5em;
+    margin-top: 5em; /* Space for fixed header if any */
     text-align: center;
 }
 
-/* Styling for all h1 elements */
-main h1 {
-    font-size: 4em; /* Larger font size for the main heading */
-    margin-bottom: 0.5em; /* Space below the heading */
-    color: #000; /* Specific text color */
+/* Footer styling */
+footer {
+    padding: 1em;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
-/* Styling for all paragraph elements */
-main p {
-    font-size: 1.5em; /* Size for paragraph text */
-    margin: 0.5em 0; /* Margins above and below paragraphs */
-    color: #000; /* Slightly different shade for paragraphs */
-}
-
-/* Media query for smaller screens (mobile devices) */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     body {
-        background-attachment: scroll; /* Allows the background to scroll with content */
-        background-size: auto; /* Adjust background size */
+        background-attachment: scroll; /* Non-fixed background for mobiles */
     }
 
     main h1 {
-        font-size: 2.5em;
+        font-size: 2em; /* Smaller text size for mobile */
     }
 
     main p {
         font-size: 1em;
     }
-}
-
-/* Footer */
-footer {
-    width: 100vw; /* Ensure footer spans full viewport width */
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-    position: relative; /* Stack normally in the flex layout */
 }
