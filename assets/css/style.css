@@ -62,6 +62,7 @@ main {
     width: 100%; /* Ensure main spans full width */
     padding-top: calc(3em + 1.5em); /* Adjusted padding for fixed header height */
     padding: 2em;
+    margin-top: 5em; 
     text-align: center;
 }
 
