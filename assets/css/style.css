@@ -57,13 +57,30 @@ nav ul li a:hover {
 }
 
 /* Main Content */
+/* General styles for main content */
 main {
     flex: 1; /* Allows main to grow and fill space */
     width: 100%; /* Ensure main spans full width */
-    padding-top: calc(3em + 1.5em); /* Adjusted padding for fixed header height */
     padding: 2em;
-    margin-top: 5em; 
-    text-align: center;
+    margin-top: 5em; /* Ensures content starts below fixed header */
+    text-align: center; /* Center-align text */
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
+    line-height: 1.6; /* Line height for better readability */
+}
+
+/* Styling for all h1 elements */
+main h1 {
+    font-size: 2.5em; /* Larger font size for the main heading */
+    margin-bottom: 0.5em; /* Space below the heading */
+    color: #ffffff; /* Specific text color */
+}
+
+/* Styling for all paragraph elements */
+main p {
+    font-size: 1.2em; /* Size for paragraph text */
+    margin: 0.5em 0; /* Margins above and below paragraphs */
+    color: #dddddd; /* Slightly different shade for paragraphs */
 }
 
 /* Footer */
