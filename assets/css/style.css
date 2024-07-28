@@ -15,7 +15,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed; /* Fixes the background image in place */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -92,6 +91,9 @@ main p {
 
     main p {
         font-size: 1em; /* Smaller paragraph text size for mobile devices */
+    }
+    body {
+        background-attachment: fixed;
     }
 }
 
