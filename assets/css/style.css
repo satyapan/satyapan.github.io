@@ -163,6 +163,11 @@ main p {
     body {
         background-attachment: fixed;
     }
+    .project-image {
+    margin-left: 0px; /* Increase space between image and text */
+    margin-right: 0px; /* Increase space between image and text */
+    margin-top: 0px; /* Increase space between image and text */
+}
 }
 
 /* Footer */
