@@ -3224,14 +3224,6 @@ body {
     color: #757373;
 	}
 
-#header {
-    width: 18em;   /* default is ~23em */
-}
-
-#main {
-    margin-left: 18em;
-}
-
 #header .image.avatar {
     width: 10em;      /* default is ~6em */
     height: 10em;
