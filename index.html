@@ -1,31 +1,242 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Satyapan's personal website</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Welcome!</h1>
-        <img src="assets/img/mypicture.jpg" alt="Your Picture" class="profile-picture">
-        <p>Hello! My name is Satyapan Munshi, and I am a PhD candidate at the Kapteyn Astronomical Institute in Groningen, Netherlands. I am passionate about research in radio astronomy and observational cosmology.</p>
-        <p>Currently, I am working in the group of Prof. Leon Koopmans, on observational 21-cm cosmology. We are trying to detect the 21-cm signal from neutral hydrogen in the early universe using low-frequency radio interferometers. More specifically, I am using the radio telescope NenuFAR to explore the Cosmic Dawn, an era when the first stars in the universe were formed.</p>
-        <p> Before coming to the Netherlands, I completed my Bachelor's and Master's in India, at the Indian Institute of Science Education and Research (IISER), Mohali with a major in physics and a minor in astronomy. For my master's thesis with Prof. Jasjeet Singh Bagla, we worked on HI intensity mapping on the Extended Groth Strip field observed with the upgraded GMRT.</p>
-        <p> Outside of research, I enjoy playing racket sports, singing, and playing the piano. I also like exploring different approaches to explaining concepts in physics and occasionally write down my thoughts <a href="https://cosmicdive.wordpress.com/" target="_blank">here</a>.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 S. Munshi</p>
-    </footer>
-</body>
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Satyapan Munshi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<a href="#one" class="image avatar">
+					<img src="images/mypicture.jpg" alt="Satyapan Munshi" />
+				</a>
+				<h2>
+					<strong>Satyapan Munshi</strong></br>
+					<span style="font-size: 0.7em;">Postdoctoral fellow</span>
+				</h2>
+				<span style="font-size: 1.3em;">
+				Research interests</br>
+				</span>
+				<span style="font-size: 1em;">
+				Radio astronomy &amp; 21-cm cosmology
+				</span>
+				<p style="margin-top: 1em;">
+					<a href="#one">Home</a> &nbsp;•&nbsp;
+					<a href="#two">Research</a> &nbsp;•&nbsp;
+					<a href="#three">Contact</a>
+				</p>
+			</div>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- One: Home -->
+			<section id="one">
+				<header class="major">
+					<h2>Welcome!</h2>
+				</header>
+
+				<p>
+					Hello! My name is <strong>Satyapan Munshi</strong>, and I am a researcher working in radio astronomy and observational cosmology.
+				</p>
+
+				<p>
+  					I am currently a <strong>postdoctoral fellow</strong> at Mount Stromlo Observatory of the Australian National University. I work with the <strong>MWA EoR project</strong>, which aims to detect the redshifted 21-cm signal from the Epoch of Reionization using the Murchison Widefield Array. My research focuses on developing methods to <strong>bridge the gap between observations and theory</strong> in 21-cm cosmology.
+				</p>
+
+				<p>
+ 					Before moving to Australia, I completed my PhD at the Kapteyn Astronomical Institute in the Netherlands, working with Prof. Léon Koopmans on <strong>constraining the Cosmic Dawn 21-cm signal using NenuFAR</strong>. My doctoral research also involved studying foreground contamination, and developing algorithms for radio-frequency interference modeling, and 21-cm signal-separation.
+				</p>	
+
+				<p>
+					I previously completed my Bachelor’s and Master’s degrees at the <strong>Indian Institute of Science Education and Research</strong> (IISER) Mohali, with a major in physics and a minor in astronomy. For my Master’s thesis, supervised by Prof. Jasjeet Singh Bagla, I worked on <strong>HI intensity mapping</strong> of the Extended Groth Strip field observed with the <strong>upgraded GMRT</strong>.
+				</p>
+
+				<p>
+					Outside of research, I enjoy playing racket sports, singing, and playing the piano.	I also like exploring different approaches to explaining concepts in physics and occasionally write down my thoughts <a href="https://cosmicdive.wordpress.com/" target="_blank" rel="noopener">here</a>.
+				</p>
+
+				<ul class="actions">
+					<li><a href="#two" class="button">See my research</a></li>
+					<li><a href="https://scholar.google.com/citations?user=b4TC3iIAAAAJ&hl" target="_blank" rel="noopener" class="button">Publications</a></li>
+				</ul>
+			</section>
+
+			<!-- Two: Research -->
+			<section id="two">
+				<h2>Research</h2>
+				<p>
+					You can find a list of my publications
+					<a href="https://scholar.google.com/citations?user=b4TC3iIAAAAJ&hl" target="_blank" rel="noopener">here</a>.
+					Listed below are the projects I have led.
+				</p>
+
+				<h3>Ongoing Projects</h3>
+				<div class="row">
+
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/demo_sim.png" class="image fit thumb">
+							<img src="images/demo_sim.png" alt="Using night-to-night coherence in 21-cm signal separation" />
+						</a>
+						<h3>Using night-to-night coherence in 21-cm signal separation</h3>
+						<p>
+							The standard approach to retrieving the 21-cm signal uses the frequency smoothness of the foregrounds to separate them from the signal.
+							If instrumental systematics do not have a smooth spectral signature, they cannot be separated from the 21-cm signal.
+							In this project, we developed an extension to Gaussian process regression (GPR) based 21-cm signal separation, which uses the fact that the
+							21-cm signal is coherent across multiple nights of observation to separate it from time-incoherent contributions from instrumental systematics.
+							<a href="https://arxiv.org/abs/2508.08235" target="_blank" rel="noopener">Paper</a>.
+						</p>
+					</article>
+
+				</div>
+
+				<h3>Completed Projects</h3>
+				<div class="row">
+
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/nt04.jpeg" class="image fit thumb"><img src="images/nt04.jpeg" alt="Improved upper limits from observing a new field with NenuFAR" /></a>
+						<h3>Improved upper limits from observing a new field with NenuFAR</h3>
+						<p>
+							We analyzed four nights of observations of an optimal field with NenuFAR, selected carefully to minimize contamination from bright radio sources. This analysis resulted in the strongest upper limits to date on the 21-cm power spectrum during the Cosmic Dawn, with the upper limits approaching astrophysically relevant exotic signal models during the Cosmic Dawn for the first time.
+							<a href="https://doi.org/10.1093/mnras/staf1386" target="_blank" rel="noopener">Paper</a>.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/nfi.jpeg" class="image fit thumb"><img src="images/nfi.jpeg" alt="Near field imaging of local RFI" /></a>
+						<h3>Near field imaging of local RFI</h3>
+						<p>
+							We developed two near-field imaging algorithms to make three-dimensional maps of local RFI from radio interferometric data. These algorithms were used to model local RFI near NenuFAR, and study the impact of terrestrial RFI on far-field images, uv plane and the 21-cm power spectrum through forward simulations.
+							<a href="https://doi.org/10.1051/0004-6361/202554763" target="_blank" rel="noopener">Paper</a>.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/wedge.png" class="image fit thumb"><img src="images/wedge.png" alt="Quantifying the full sky foreground wedge" /></a>
+						<h3>Quantifying the full sky foreground wedge</h3>
+						<p>
+							We derived and validated full-sky foreground wedge equations for phase tracking instruments without a flat-sky approximation. These equations give new insights into the nature of foreground contamination in the cylindrical power spectrum and show that foregrounds can extend well beyond previously thought.
+							<a href="https://doi.org/10.1051/0004-6361/202451181" target="_blank" rel="noopener">Paper</a>.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/limits.png" class="image fit thumb"><img src="images/limits.png" alt="First upper limits on the 21-cm signal with NenuFAR" /></a>
+						<h3>First upper limits on the 21-cm signal with NenuFAR</h3>
+						<p>
+							We performed the first end-to-end analysis of a single night of NenuFAR observations to place upper limits on the 21-cm signal power spectrum at z = 20.3. We investigated the nature of excess power beyond thermal noise affecting NenuFAR observations.
+							<a href="https://doi.org/10.1051/0004-6361/202348329" target="_blank" rel="noopener">Paper</a>.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/swan.jpg" class="image fit thumb"><img src="images/swan.jpg" alt="Radio imaging with SWAN" /></a>
+						<h3>Radio imaging with SWAN</h3>
+						<p>
+							We calibrated delays and developed a correlation + imaging pipeline for raw SWAN data, producing the first interferometric image with SWAN.
+							<a href="https://link.springer.com/article/10.1007/s12045-022-1428-9" target="_blank" rel="noopener">Paper</a>.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/msthesis.png" class="image fit thumb"><img src="images/msthesis.png" alt="HI intensity mapping on the EGS field with GMRT" /></a>
+						<h3>HI intensity mapping on the EGS field with GMRT</h3>
+						<p>
+							We analyzed observations of the Extended Groth Strip with the upgraded GMRT and used the Tapered Gridded Estimator (TGE) to estimate upper limits on the 21-cm signal power spectrum, constraining &Omega;<sub>HI</sub>b<sub>HI</sub> at z = 0.028, 0.34, and 0.38.
+							<a href="http://14.139.227.205:8080/jspui/handle/123456789/1619" target="_blank" rel="noopener">Thesis</a>.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/flux.png" class="image fit thumb"><img src="images/flux.png" alt="Accurate flux measurement of extended sources" /></a>
+						<h3>Accurate flux measurement of extended sources</h3>
+						<p>
+							We used Jorsater &amp; van Moorsel's approach to estimate true flux in radio interferometric images when residuals are reported in Jy/clean-beam. We tested the algorithm across different sky source models, weighting schemes and imaging parameters.
+							<a href="https://drive.google.com/file/d/1QritrgdI8tbg13ltdI3tU8cMNmc6fD0Q/view?usp=sharing" target="_blank" rel="noopener">Report</a>.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/hxmt.png" class="image fit thumb"><img src="images/hxmt.png" alt="Broadband characterization of GX 17+2 using HXMT" /></a>
+						<h3>Broadband characterization of GX 17+2 using HXMT</h3>
+						<p>
+							We studied Insight-HXMT spectra across source states and found evidence of a hard tail in the horizontal and flaring branches and an iron fluorescence line which appears only in the flaring branch.
+							<a href="https://drive.google.com/file/d/1W3pm6a-wBBxS4dllCqFxCDrHE6lTbO8a/view?usp=sharing" target="_blank" rel="noopener">Report</a>.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/optical.jpeg" class="image fit thumb"><img src="images/optical.jpeg" alt="Optical and infrared variability of a high mass X-ray binary" /></a>
+						<h3>Optical and infrared variability of a high mass X-ray binary</h3>
+						<p>
+							We built an automated pipeline to construct differential light curves from optical and infrared images. Analyisis of simultaneous observations of the HMXB IGR17544-2619 showed evidence of correlation between X-ray and optical light curves.
+							<a href="https://drive.google.com/file/d/1jXXTUF0N7EzSYdF9-3sZcQv_dDybADxW/view?usp=sharing" target="_blank" rel="noopener">Report</a>.
+						</p>
+					</article>
+
+				</div>
+			</section>
+
+			<!-- Three: Contact -->
+			<section id="three">
+				<h2>Contact</h2>
+				<p>You can reach me at:</p>
+
+				<div class="row">
+					<div class="col-6 col-12-small">
+						<ul class="labeled-icons">
+							<li>
+								<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+								<a href="mailto:munshi@astro.rug.nl">munshi@astro.rug.nl</a>
+							</li>
+							<li>
+								<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+								DF028, Wooley building, Mount Stromlo Observatory<br />
+								ACT 2611, Australia
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-6 col-12-small">
+						<ul class="icons">
+							<li><a href="https://github.com/satyapan" target="_blank" rel="noopener" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/satyapan-munshi-996b95226/" target="_blank" rel="noopener" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.researchgate.net/profile/Satyapan-Munshi" target="_blank" rel="noopener" class="icon brands fa-researchgate"><span class="label">ResearchGate</span></a></li>
+							<li><a href="https://cosmicdive.wordpress.com/" target="_blank" rel="noopener" class="icon solid fa-pen-nib"><span class="label">Blog</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="copyright">
+					<li>&copy; 2025 S. Munshi</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
